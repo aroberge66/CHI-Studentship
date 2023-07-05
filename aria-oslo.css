@@ -51,10 +51,10 @@ a.selected {
 section {
   margin: 80px 0 80px 0;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr); 
   gap: 32px 32px;
   grid-auto-flow: dense;
-}
+	}
 section h3 {
   grid-column: 2 / span 10;
   text-align: center;
@@ -139,6 +139,6 @@ footer a {
 
 @media (max-width: 600px) {
   body {
-    background-color: red;
+    background-color: #FF0004;
   }
 }

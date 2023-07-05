@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+body {
+  font-family: Dancing Script;
+  font-size: 18px;
+  line-height: 1.5;
+
+  background-image: url('istockphoto-1370962549-612x612.jpg');
+  background-size: cover;
+  background-attachment: scroll;
+  color: #3caaf3;
+  margin: 80px auto 48px auto;
+  width: 1120px;
+}
+h1,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-family: Dancing Script;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 3;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+nav,
+footer {
+  font-family: Dancing Script;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 2;
+}
+
+a {
+  color: #ff1e00;
+  text-decoration: none;
+  margin: 0 0 0 32px;
+  transition: margin 0.3s;
+}
+a:hover,
+a.selected {
+  color: aquamarine;
+  margin: 0 0 0 64px;
+}
+
+section {
+  margin: 80px 0 80px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px 32px;
+  grid-auto-flow: dense;
+}
+section h3 {
+  grid-column: 2 / span 10;
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: azure;
+}
+h4 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  text-align: center;
+  font-family: Kreon;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 3;
+  color: bisque;
+  margin: 0 0 16px 0;
+}
+section.project div.artwork {
+  grid-column: 1 / span 8;
+  text-align: center;
+}
+section.project div.description {
+  grid-column: 9 / span 4;
+}
+section.project img {
+  max-height: 1000px;
+  text-align: center;
+}
+section.project-alt div.artwork {
+  grid-column: 5 / span 8;
+}
+section.project-alt div.description {
+  grid-column: 1 / span 4;
+}
+section.about div.artwork {
+  grid-column: 1 / span 7;
+  text-align: center;
+  max-height: 1000px;
+}
+section.about div.description {
+  grid-column: 8 / span 12;
+}
+h5 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  font-family: Kreon;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 3;
+  color: bisque;
+  margin: 0 0 16px 0;
+}
+h6 {
+  text-align: center;
+  font-family: Droid Sans;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: azure;
+}
+section.contact div.form {
+  grid-column: 4 / span 6;
+  text-align: center;
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  margin: 0 32 0 32;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}

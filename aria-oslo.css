@@ -101,10 +101,9 @@ section.project-alt div.description {
 section.about div.artwork {
   grid-column: 1 / span 7;
   text-align: center;
-  max-height: 1000px;
 }
 section.about div.description {
-  grid-column: 8 / span 12;
+  grid-column: 10 / span 12;
 }
 h5 {
   display: flex;

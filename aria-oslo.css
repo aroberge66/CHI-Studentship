@@ -9,6 +9,9 @@ body {
   margin: 80px auto 48px auto;
   width: 1120px;
 }
+section.title {
+	
+}
 
 h1,
 h2 {
@@ -26,6 +29,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+
 }
 nav,
 footer {

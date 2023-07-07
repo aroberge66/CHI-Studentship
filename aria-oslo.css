@@ -10,9 +10,7 @@ body {
   margin: 80px auto 48px auto;
   width: 1120px;
 }
-section.title {
-	
-}
+
 
 h1,
 h2 {
@@ -21,9 +19,10 @@ h2 {
   justify-content: flex-start;
   flex-direction: row;
   font-family: Dancing Script;
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 900;
-  line-height: 3;
+	color: coral;
+  line-height: 1.3;
 }
 header {
   display: flex;
@@ -35,9 +34,9 @@ header {
 nav,
 footer {
   font-family: Dancing Script;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 900;
-  line-height: 2;
+  line-height: 1.3;
 }
 
 a {
@@ -55,7 +54,7 @@ a.selected {
 section {
   margin: 80px 0 80px 0;
   display: grid;
-  grid-template-columns: repeat(12, 1fr); 
+  grid-template-columns: repeat(12, fr); 
   gap: 32px 32px;
   grid-auto-flow: dense;
 }
@@ -80,6 +79,15 @@ h4 {
   line-height: 3;
   color: bisque;
   margin: 0 0 16px 0;
+}
+h7 {
+	grid-column: 2 / span 10;
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: azure;
 }
 section.project div.artwork {
   grid-column: 1 / span 8;
@@ -129,6 +137,7 @@ h6 {
 section.contact div.form {
   grid-column: 4 / span 6;
   text-align: center;
+flex-direction: column;
 }
 footer {
   display: flex;
@@ -139,10 +148,142 @@ footer {
 footer a {
   margin: 0 32 0 32;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 1248px) {
   body {
-	background-image: url('');
-    background-color: #FF0004;
+	width:auto;
+	margin: 80px 64px 48px 64px;
   }
+	section.about {
+		margin: 80px 0 48px 0;
+	}
+
+}
+@media (max-width: 1200px){
+	h2 {
+		font-size: 50px;
+	}
+	nav, footer, h3, h7 {
+		font-size: 25px
+	}
+		h4 {
+		font-size: 15px;
+	}
+		section.project img {
+  		max-height: 700px;
+  		text-align: center;
+	}
+	section.about img {
+		max-width: 500px;
+	}
+	h5 {
+		font-size: 12px;
+	}
+
+}
+@media (max-width: 1000px){
+	section.project img {
+  		max-height: 600px;
+  		text-align: center;
+	}
+	h4 {
+		font-size: 13px;
+	}
+	section h3 {
+		margin: 5px 0 5px 0;
+	}
+	section.about img {
+		max-width: 400px;
+	}
+	h5 {
+		font-size: 10px;
+	}
+	h7 {
+		font-size: 22px;
+	}
+
+}
+@media (max-width: 950px) {
+		h5 {
+		font-size: 8px;
+	}
+	h7 {
+		font-size: 20px;
+	}
+	}
+
+@media (max-width: 900px){
+	h2 {
+		font-size: 30px;
+	}
+	nav, footer {
+		font-size: 20px
+	}
+		section h3 {
+		font-size: 25px;
+	}
+		h4 {
+		font-size: 12px;
+	}
+	h7 {
+		font-size: 18px;
+	}
+	section.about img {
+		max-width: 300px;
+	}
+
+	
+
+}
+@media (max-width: 800px){
+	h2 {
+		font-size: 60px;
+		margin: 10px 0 5px 0;
+	}
+	section h3 {
+		font-size: 20px;
+	}
+	nav, footer {
+		font-size: 25px;
+		margin: 0 16px 0 16px;
+	}
+	header {
+  		align-items: center;
+  		justify-content: center;
+  		flex-direction: column;
+	}
+	header img {
+		max-width: 800px;
+	}
+	section.project img {
+  		max-height: 500px;
+  		text-align: center;
+	}
+	h4 {
+		font-size: 10px;
+	}
+	h7 {
+		font-size: 15px;
+	}
+	section.about img {
+		max-width: 250px;
+	}
+}
+@media (max-width: 675px){
+	section {
+		grid-template-columns: repeat(4/ fr);
+		gap : 24px 24px;
+	
+	}
+	section h3, h4, section.project div.artwork, section.project div.description, section.about div.description, section.about div.artwork {
+  		grid-column: 1/ span 4;
+		margin: 2px 0 2px 0;
+	}
+	
+	h4 {
+		font-size: 12px;
+		
+	}
+	section.about img {
+		max-width: 400px;
+	}
 }

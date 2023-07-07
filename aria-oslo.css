@@ -43,7 +43,9 @@ section.contact div.form {
 	display: block;
   	align-items: center;
   	flex-direction: column;
+	
 }
+
 
 input, textarea {
 	width: 50%;
@@ -233,7 +235,7 @@ footer a {
 	h7 {
 		font-size: 20px;
 	}
-	}
+}
 
 @media (max-width: 900px){
 	h2 {
@@ -312,4 +314,5 @@ footer a {
 	}
 	input, textarea {
 	width: 75%;
+	}
 }

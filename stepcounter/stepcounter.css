@@ -1,3 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {
+	grid-template-columns: repeat(12, fr);
+	background-color: aqua;
+}
+
+section.sidebar{
+	grid-column: 2/ span 5;
+}
+
+section.body {
+	grid-column: 6/span 12;
+}
+h1 {
+	font-family:  "Lucida Grande";
+}

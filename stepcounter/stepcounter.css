@@ -1,18 +1,61 @@
-@charset "UTF-8";
-/* CSS Document */
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+
+
+:root {
+	--background-main: #edf4f7;
+	--background-side: #f4f8fa;
+	--primary-blue: #32444d;
+	--secondary-blue: #b3c3cc;
+	--primary-orange: #ff6719;
+}
 
 body {
-	grid-template-columns: repeat(12, fr);
-	background-color: aqua;
+	font-family: inter;
+	font-size: 16px;
+	line-height: 1.5;
+	
+	background-color: var(--background-main);
+	color: var(--primary-blue);
+	
+	display: grid;
+	grid-template-columns: 320px 1fr;
+	min-height: 100vh;
 }
 
-section.sidebar{
-	grid-column: 2/ span 5;
+nav {
+	background-color: var(--background-side);
+	padding: 48px;
 }
 
-section.body {
-	grid-column: 6/span 12;
+main {
+	padding: 48px;
 }
+
 h1 {
-	font-family:  "Lucida Grande";
+	font-size: 24px;
+	font-weight: 700;
+}
+h2 {
+	color: var(--secondary-blue);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 24px 0 0 0;
+}
+
+p {
+	font-size: 24px;
+	margin: 1px
+	
+}
+
+rect {
+	fill: var(--primary-orange);
+}
+
+circle {
+	stroke: var(--primary-blue);
 }

@@ -11,6 +11,7 @@
 	--primary-blue: #32444d;
 	--secondary-blue: #b3c3cc;
 	--primary-orange: #ff6719;
+	--secondary-orange: #ffaa80;
 }
 
 body {
@@ -59,3 +60,35 @@ rect {
 circle {
 	stroke: var(--primary-blue);
 }
+
+text {
+	fill: var(--secondary-orange);
+	text-anchor: middle;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

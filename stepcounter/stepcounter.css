@@ -29,11 +29,11 @@ body {
 
 nav {
 	background-color: var(--background-side);
-	padding: 48px;
+	padding: 10px;
 }
 
 main {
-	padding: 48px;
+	padding: 10px;
 }
 
 h1 {

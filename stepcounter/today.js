@@ -19,14 +19,21 @@ const barScale = d3.scaleLinear()
 	.domain([0, 2000])
 	.range([1, 112])
 
+
 todaySvg
 	.selectAll("rect")
 	.data(todayData)
 	.enter()
 	.append("rect")
-	.attr("width", 24)
-	.attr("y", (d, i) => { return 112 - barScale(d)})
 	.attr("x", (d, i) => { return i * 36 })
+	.attr("y", (d, i) => { return 112 })
+	.attr("width", 24)
+	.attr("height", 0)
+	.transition()
+	.duration(1500)
+	.delay((d, i) => {return i * 40})
+	.ease(d3.easeCubicOut)
+	.attr("y", (d, i) => { return 112 - barScale(d)})
 	.attr("height", (d, i) => {return barScale(d)} )
 
 todaySvg
@@ -38,29 +45,43 @@ todaySvg
 	.attr("y", 130)
 	.text((d, i) => {return i })
 
-
 const monthSvg = d3.select("svg.month")
 
+const circleScale = d3.scaleSqrt()
+	.domain([0, 30000])
+	.range([1, 50])
 
-todaySvg
+const colorScale = d3.scaleSqrt()
+	.domain([100,30000])
+	.range(["red", "blue"])
+
+
+monthSvg
 	.selectAll("circle")
 	.data(monthData)
 	.enter()
 	.append("circle")
-	.attr("width", 24)
-	.attr("y", (d, i) => { return 112 - barScale(d)})
-	.attr("x", (d, i) => { return i * 36 })
-	.attr("height", (d, i) => {return barScale(d)} )
+	.attr("cx", (d, i) => { return i % 7 * 120 + 60 })
+	.attr("cy", (d, i) => { return Math.floor(i / 7) * 120 + 60})
+	.attr("r", 0)
+	.transition()
+	.duration(1500)
+	.delay((d, i) => {return i * 40})
+	.ease(d3.easeCubicOut)
+	.attr("r", (d, i) => {return circleScale(d)} )
 
-todaySvg
+	//.attr("r", (d, i) => {return circleScale(d)} )
+	//.attr("fill", (d, i) => { return colorScale(d) })
+
+
+monthSvg
 	.selectAll("text")
 	.data(todayData)
 	.enter()
 	.append("text")
-	.attr("x", (d, i) => {return i * 36 + 12})
-	.attr("y", 130)
+	.attr("x", (d, i) => { return i % 7 * 120 + 60 })
+	.attr("y", (d, i) => { return Math.floor(i / 7) * 120 + 120})
 	.text((d, i) => {return i })
-
 
 
 

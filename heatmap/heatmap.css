@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/* CSS Document */
+:root {
+	--background: #272727;
+	--text-color: #ffffff;
+}
+
+
+body {
+	font-family: baskerville;
+	font-size: 16px;
+	line-height: 1.25;
+	
+	background-color: var(--background);
+	color: var(--text-color);
+	margin: 160px auto 80px auto;
+	width: 800px;
+}
+
+header{
+	position: fixed; 
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 48px 24px 48px;
+}
+
+
+h1{
+	font-size: 24px;
+	font-weight: 700;
+	max-width: 400px;
+	background-image: url("temp.svg");
+	background-repeat: no-repeat;
+	background-position: 0 10%;
+	padding: 0 0 0 64px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,3 @@
-
-
 let data = [
   {
     "city": "London",
@@ -147,7 +145,7 @@ let data = [
   },
   {
     "city": "Auckland",
-	"country": "New Zealand",
+		"country": "New Zealand",
     "months": [
       20,
       20,
@@ -161,24 +159,6 @@ let data = [
       15,
       16,
       18
-    ]
-  },
-	  {
-    "city": "Calgary",
-    "country": "Canada",
-    "months": [
-      -7,
-      -5,
-      -1,
-      5,
-      10,
-      14,
-      17,
-      17,
-      12,
-      6,
-      -2,
-      -6
     ]
   }
 ]

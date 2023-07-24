@@ -1,27 +1,43 @@
 @charset "UTF-8";
 /* CSS Document */
+
+@font-face {
+	font-family: Mohave;
+	src: url("mohave-light.woff2"), url("mohave-light.woff");
+}
+
+@font-face {
+	font-family: Mohave;
+	font-weight: 700;
+	src: url("mohave-bold.woff2"), url("mohave-bold.woff");
+}
+
 :root {
 	--background: #272727;
 	--text-color: #ffffff;
 }
 
 
+
+
 body {
-	font-family: baskerville;
+	font-family: Mohave;
 	font-size: 16px;
-	line-height: 1.25;
+	line-height: 1.5;
 	
 	background-color: var(--background);
 	color: var(--text-color);
 	margin: 160px auto 80px auto;
 	width: 800px;
+	
 }
 
-header{
-	position: fixed; 
+header {
+	background-color: red;
+	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 96%;
 	
 	display: flex;
 	justify-content: space-between;
@@ -29,16 +45,29 @@ header{
 	padding: 24px 48px 24px 48px;
 }
 
-
-h1{
+h1 {
 	font-size: 24px;
 	font-weight: 700;
 	max-width: 400px;
 	background-image: url("temp.svg");
 	background-repeat: no-repeat;
-	background-position: 0 10%;
+	background-position: 0 50%;
 	padding: 0 0 0 64px;
+		
+	
 }
+
+
+text {
+	fill: var(--text-color);
+}
+
+
+text.city {
+	font-size: 32px;
+	font-weight: 700;
+}
+
 
 
 

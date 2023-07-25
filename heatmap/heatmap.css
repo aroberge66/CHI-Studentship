@@ -69,13 +69,46 @@ text.city {
 }
 
 
-circle{
-	fill: white;
+text.temp {
+	text-anchor: middle;
+	dominant-baseline: middle;
+	font-size: 18px;
+	font-weight: 700;
+	opacity: 0;	
+	transition: opacity .8s;
 }
 
-text.monthGroups{
-	color: black;
+circle {
+	fill: white;
+	opacity: 0;	
+	transition: opacity 0.25s;
 }
+
+
+path {
+	stroke: var(--text-color);
+	stroke-width: 4px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
+
+
+g.data-point:hover circle {
+	opacity: 1;
+}
+
+g.data-point:hover text.temp {
+	opacity: 1;
+}
+
+g.data-point:hover path{
+	opacity: 0;
+}
+
+
+
+
 
 
 

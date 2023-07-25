@@ -1,5 +1,23 @@
 let data = [
   {
+    "city": "Calgary",
+		"country": "Canada",
+    "months": [
+      -7,
+      -5,
+      -1,
+      5,
+      10,
+      14,
+      17,
+      17,
+      12,
+      6,
+      -2,
+      -6
+    ]
+  }, 
+{
     "city": "London",
     "country": "United Kingdom",
     "months": [
@@ -162,21 +180,75 @@ let data = [
     ]
   },
 	  {
-    "city": "Calgary",
+    "city": "Toronto",
 		"country": "Canada",
     "months": [
-      -7,
-      -5,
-      -1,
-      5,
-      10,
+      -3,
+      -3,
+      1,
+      7,
       14,
-      17,
-      17,
-      12,
-      6,
+      16,
+      21,
+      21,
+      18,
+      11,
+      5,
+      -1
+    ]
+  },
+	  {
+    "city": "Seoul",
+		"country": "Korea",
+    "months": [
+      -4,
       -2,
-      -6
+      4,
+      11,
+      17,
+      21,
+      24,
+      24,
+      19,
+      13,
+      5,
+      -2
+    ]
+  },
+	  {
+    "city": "Hong Kong",
+		"country": "China",
+    "months": [
+      16,
+      18,
+      20,
+      24,
+      26,
+      28,
+      29,
+      29,
+      27,
+      26,
+      22,
+      17
+    ]
+  },
+	  {
+    "city": "Vancouver",
+		"country": "Canada",
+    "months": [
+      4,
+      5,
+      7,
+      9,
+      13,
+      15,
+      17,
+      18,
+      15,
+      10,
+      6,
+      4
     ]
   }
 ]

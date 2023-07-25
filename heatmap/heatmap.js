@@ -10,6 +10,19 @@ const colorScale= d3.scaleLinear()
 	.domain([-10, 0, 7, 14, 21, 24])
 	.range(["#814ee7","#3f24ec", "#79e87c", "#fbe157", "#ff9737", "#fe3b3b"])
 	
+const tempScale=d3.scaleLinear()
+	.domain([-20, 45])
+	.range([150, 0])
+
+const lineGenerator=d3.line()
+	.x((d,i) => {return 225 + 50 *i})
+	.y((d,i) => {return tempScale(d)})
+
+const unitScale=d3.scaleLinear ()
+	.domain([0,100])
+	.rangeRound([32, 212])
+
+
 
 
 const dataPoints = svg
@@ -68,22 +81,33 @@ monthGroups
 monthGroups
 	.append("circle")
 	.attr("cx", 25)
-	.attr("cy", 75)
+	.attr("cy", (d,i) => {return tempScale(d)})
 	.attr("r", 15)
 
 
-monthGroups
+const temperatures= monthGroups
 	.append("text")
 	.attr("class", "temp")
 	.attr("x", 25)
-	.attr("y", 75)
+	.attr("y", (d,i) => {return tempScale(d)+2})
 	.text((d,i) =>{return d})
 	.style("fill", (d,i) => {return colorScale(d)})
 
+dataPoints	
+	.append("path")
+	.datum((d,i) =>{ return d.months})
+	.attr("d", (d,i) =>{return lineGenerator(d)})
 
 
-
-
+const selectTag= document.querySelector("select")
+	selectTag.addEventListener("input", function () {
+		if (this.value==="C") {
+			temperatures.text((d,i)=> {return d})
+		} else {
+			temperatures.text((d,i)=>{return unitScale(d)})
+		}
+		
+	})
 
 
 

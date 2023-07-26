@@ -6,12 +6,13 @@
 //all will run the same code
 
 const svg=d3.select("svg")
-
+//this is setup functions
 svg
 	.attr("width", 960)
 	.attr("height", 720)
 
 const placeCities= function () {
+	//this is upadated funtions
 	console.log("hi there")
 }
 

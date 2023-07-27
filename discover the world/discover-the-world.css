@@ -1,31 +1,82 @@
 @charset "UTF-8";
 /* CSS Document */
 
+:root {
+	--background: #fff9f9;
+	--color: #ff0000;
+}
+
+
 body {
 	font-family: Work Sans;
 	font-size: 16px;
 	line-height: 1.5;
 	
-	background: #fff9f9;
-	color: #ff0000;
+	background: var(--background);
+	color: var(--color);
 	margin: 64px auto 64px auto;
-	width: 960px;
+	max-width: 960px;
 	text-align: center;
 	
 }
+
 
 span {
 	margin: 0 8px 0 8px;
 }
 
 h1{
+	margin: 0 0 48px 0;
+}
+
+circle {
+	fill: var(--color);
+	stroke: var(--background);
+	stroke-width: 3px;
+}
+
+line {
+	stroke-width: 1px;
+	opacity: 0.5;
+	stroke-dasharray: 2 4;
+}
+
+path {
+	stroke-width: 3px;
+}
+
+text.x-axis, text.y-axis {
+	fill: var(--color);
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 1000;
+	text-anchor:  middle;
+	dominant-baseline: middle;
+}
+
+g.city rect {
+	opacity: 0;
+	fill: var(--color);
+	transition: opacity 0.25s;
+}
+
+g.city text {
+	fill: var(--background);
+	text-anchor: middle;
+	font-size: 14px;
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+g.city:hover rect, g.city:hover text {
+	opacity: 1;
 }
 
 
-
-
+@media (max-width: 100px) {
+	body {
+		margin: 20px;
+	}
+}
 
 
 

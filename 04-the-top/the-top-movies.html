@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>Top-Rated-Movies</title>
 	<link rel="stylesheet" type="text/css" href="the-top-movies.css"/>
 </head>	
 <body>
@@ -12,15 +12,21 @@
 		<img src="logo.svg">
 		</h1>
 		
-		
 		<form>
 		
-		<span>IMDb</span>
-		<span>Metascore</span>
+			<span class="i">IMDb</span>
+			<span class="m">Metascore</span>
 		
-		<selct>
-			<option>IMDb Score</option>	
-		</selct>
+			<select>
+				<option value="imdbA">IMDb Score, Ascending</option>	
+				<option value="imdbD">IMDb Score, Descending</option>	
+				<option value="metaA">Metascore, Ascending</option>
+				<option value="metaD">Metascore, Descending</option>
+				<option value="yearA">Year Ascending</option>
+				<option value="yearD">Year Descending</option>
+				<option value="nameA">Name (A-Z)</option>
+				<option value="nameD">Name (Z-A)</option>
+			</select>
 			
 		</form>
 		

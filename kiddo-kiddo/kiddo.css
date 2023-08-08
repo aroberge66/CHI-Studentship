@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+
+:root {
+	--back: #f4f1e9;
+	--main: #746f61;
+	--placeh: #b4b0a4;
+	--male: #ff8a00;
+	--female: #00d400;
+}
+
+body {
+	disply: flex;
+	background-color: var(--back);
+	color: var(--main);
+	font-family: Fredoka One;
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 20px 20% 20px 20%;
+}
+
+header {
+	background-color: var(--back);
+	padding: 12px;
+	
+	border-bottom: 2px solid var(--placeh);
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 2px solid var(--placeh);
+	margin: 0 0 10px 0;
+	padding: 20px;
+}
+
+h2{
+	font-size: 18px;
+	line-height: 0.2;
+}
+
+input {
+	font-size: 25px;
+	line-height: 1.5;
+	width: 35%;
+	border: 2px solid var(--placeh);
+	margin-top: 10px;
+}
+
+
+placeholder{
+	color: var(--back);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-direction: row;
+}
+
+span.male,
+span.female{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	flex-direction: row;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

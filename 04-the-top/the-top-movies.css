@@ -62,14 +62,14 @@ circle.meta {
 	fill: var(--meta)
 }
 
-text.metaT {
+text.meta {
 	fill: var(--meta);
-	font-size: 10px;
+	font-size: 12px;
 }
 
-text.imdbT {
+text.imdb {
 	fill: var(--imdb);
-	font-size: 10px;
+	font-size: 12px;
 }
 
 rect {
@@ -83,9 +83,28 @@ g.movie:hover rect {
 }
 
 
+path.imdb {
+	stroke: var(--imdb);
+	stroke-width: 3px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
 
+path.meta {
+	stroke: var(--meta);
+	stroke-width: 3px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
 
+path.area {
+	fill: var(--high);
+	
+	transition: opacity 0.25s;
 
+}
 
 
 

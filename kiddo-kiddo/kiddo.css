@@ -19,13 +19,13 @@ body {
 	font-family: Fredoka One;
 	font-size: 18px;
 	line-height: 1.5;
-	margin: 20px 20% 20px 20%;
+	margin: 2% 40% 20px 20%;
 }
 
 header {
 	background-color: var(--back);
 	padding: 12px;
-	
+	margin: 0 20% 0 0;
 	border-bottom: 2px solid var(--placeh);
 	
 	display: flex;
@@ -41,8 +41,12 @@ form {
 	align-items: center;
 	flex-direction: column;
 	border-bottom: 2px solid var(--placeh);
-	margin: 0 0 10px 0;
-	padding: 20px;
+	margin: 0 20% 0 0;
+	padding: 5px;
+}
+
+section {
+	margin: 0 20% 0 0;
 }
 
 h2{
@@ -51,32 +55,76 @@ h2{
 }
 
 input {
-	font-size: 25px;
+	font-size: 20px;
 	line-height: 1.5;
-	width: 35%;
+	width: 40%;
 	border: 2px solid var(--placeh);
 	margin-top: 10px;
-}
-
-
-placeholder{
-	color: var(--back);
+	margin-bottom: 10px;
+	font-family: Fredoka One;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
-	flex-direction: row;
+	padding: 5px;
 }
 
-span.male,
-span.female{
+div.key {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	flex-direction: row;
-	padding: 10px;
+	align-items: center;
+	
+}
+
+div.key span {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-color: red;
+	border-radius: 8px;
+	margin: 0 5px 0 16px;
+	vertical-align: baseline;
+}
+
+div.key span.male {
+	background-color: blue;
+}
+
+div.key span.female {
+	background-color: deeppink;
+}
+
+path {
+	fill: none;
+
+
+}
+
+path.domain {
+	stroke-width: 3px;
+}
+
+path.male {
+	stroke: blue;
+	stroke-width: 15px;
+	stroke-linecap: round;
+	mix-blend-mode: multiply;
+}
+
+path.female {
+	stroke: deeppink;
+	stroke-width: 15px;
+	stroke-linecap: round;
+	mix-blend-mode: multiply;
+}
+
+text {
+	font-family: Fredoka One, Comic Sans;
+	font-size: 12px;
+}
+
+path.leftA {
+	stroke-width: 10px;
 }
 
 

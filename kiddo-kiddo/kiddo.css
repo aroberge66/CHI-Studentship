@@ -87,11 +87,11 @@ div.key span {
 }
 
 div.key span.male {
-	background-color: blue;
+	background-color: lawngreen;
 }
 
 div.key span.female {
-	background-color: deeppink;
+	background-color: orange;
 }
 
 path {
@@ -105,14 +105,14 @@ path.domain {
 }
 
 path.male {
-	stroke: blue;
+	stroke: lawngreen;
 	stroke-width: 15px;
 	stroke-linecap: round;
 	mix-blend-mode: multiply;
 }
 
 path.female {
-	stroke: deeppink;
+	stroke: orang;
 	stroke-width: 15px;
 	stroke-linecap: round;
 	mix-blend-mode: multiply;

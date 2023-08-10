@@ -19,7 +19,8 @@ const pathsGroup = svg
 
 
 //y value/ number of people scale
-const rankScale = d3.scaleLinear()
+const rankScale = d3.scalePow()
+	.exponent(0.4)
 	.domain([1000, 1])
 	.range([20, 500])
 
@@ -47,16 +48,21 @@ const line=d3.line()
 	.defined((d,i)=>{return d !=0})
 	.curve(d3.curveCardinal.tension(0.1))
 
+const flatLine=d3.line()
+	.x((d,i) =>{return dateScale(1880 + 10 *i)})
+	.y((d,i) =>{return rankScale(1000)})
+	.defined((d,i)=>{return d !=0})
+	.curve(d3.curveCardinal.tension(0.1))
+
+
 
 //actually inserting the axis
 svg
 	.append("g")
-	.attr("class", "leftA")
 	.attr("transform", "translate(60,0)")
 	.call(rankAxis)
 svg
 	.append("g")
-	.attr("class", "bottomA")
 	.attr("transform", "translate(0,520)")
 	.call(dateAxis)
 
@@ -71,21 +77,31 @@ const search = function (name){
 	if (results.length > 0) {
 		nameTag.text(name)
 	
-	//connecting the path values to the svg
+
+
+//connecting the path values to the svg
 	const lines = pathsGroup
 		.selectAll("path")
 		.data(results, (d,i) =>{return d.name})
-			
+	//enters and visualizes the lines/data			
 	lines
 		.enter()
 		.append("path")
 		.attr("class", (d,i)=>{return d.sex})
+		.attr("d", (d,i)=>{return flatLine(d.rank)})
+		.style("opacity", 0)
+		.transition()
+		.duration(1000)
+		.style("opacity", 1)
 		.attr("d", (d,i)=>{return line(d.rank)})
-		
+	//deletes the old data from the svg	
 	lines
 		.exit()
+		.style("opacity", 1)
+		.transition()
+		.duration(1000)
+		.style("opacity", 0)
 		.remove()
-	
 	
 	
 //summons alert for wrong name
@@ -107,6 +123,8 @@ formTag.addEventListener("submit", function (event){
 	
 	inputTag.value=""
 })
+
+lines
 
 
 

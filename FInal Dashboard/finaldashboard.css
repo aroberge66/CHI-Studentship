@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color: black;
+	background-color: aqua;
+}
+
+header {
+	background-color: white;
+	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	flex-direction: row;
+    font-size: 14px;
+	text-align: center;
+    line-height: 1.5;
+}
+
+img.header {
+	max-height: 50px;
+	margin: 5px 0 0 0;
+}
+
+div.header { 
+	font-family: Title Font;
+	font-size: 18px;
+	width: 400px; 
+	text-decoration: none;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: row;
+}
+
+a {
+	text-decoration: none;
+	color: black; 
+}
+	
+	
+	

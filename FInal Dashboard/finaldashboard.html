@@ -1,48 +1,63 @@
 <!doctype html>
+
+<!doctype html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CHI Impact</title>
+<title>Top-Rated-Movies</title>
 	<link rel="stylesheet" type="text/css" href="finaldashboard.css"/>
-</head>
+</head>	
+
 
 <body>
-	<header class="ant-layout-header">
+
+	<header>
 		<img src="uofc.png" class="header" alt="Univeristy of Calgary">
 		<div class="header">
 
 			<a href="https://cumming.ucalgary.ca/centres/centre-health-informatics"><img src="chi.png" class="header" alt="Centre for Health Informatics" ></a>
 			<a href="https://cumming.ucalgary.ca/centres/centre-health-informatics" class="title1">Centre for Health Informatics</a>
 		</div>
-		<button type="button" class="ant-btn ant-btn-round"><span style="color: rgb(45, 75, 123);">Resources</span><span role="img" aria-label="down" class="anticon anticon-down" style="color: rgb(45, 75, 123);"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button>
-	
-		<button type="button" class="ant-btn ant-btn-round" style="top: 14px; position: absolute; right: 180px; width: 140px; height: 46px; border: none; background-color: white;"><span style="color: rgb(45, 75, 123);">Visualizations</span><span role="img" aria-label="down" class="anticon anticon-down" style="color: rgb(45, 75, 123);"><svg viewBox="64 64 896 896" focusable="false" class="" data-icon="down" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></span></button>
-</header>
-	
-<section class="total">
-	<h1>Our Impact</h1>
-	
-	<svg class="changable"></svg>
-	
-	<svg class="TPub"></svg>
-	
-	<svg class="TCite"></svg>
-	
-	<svg class="categoryVNum"></svg>
-	
-	<svg class="categoryVCite"></svg>
-	
-	<svg class="categoryVPub"></svg>
-	
-</section>	
+
+</header>	
+
+		
+<section>	
+		<form>
+			<span> Publications</span>
+			<span> Researcher</span>
+		
+			<span class="i">publications</span>
+			<span class="m">citations</span>
+		
+			<select>
+				<option value="publicationsD">Publications, Descending</option>	
+				<option value="publicationsA">Publications, Ascending</option>	
+				<option value="metaA">citations Ascending</option>
+				<option value="metaD">citations Descending</option>
+				<option value="hIndexA">H-Index Ascending</option>
+				<option value="hIndexD">H-Index Descending</option>
+				<option value="nameA">Name (A-Z)</option>
+				<option value="nameD">Name (Z-A)</option>
+				<option value="difference">Difference</option>
+			</select>
+			
+		</form>
+	<svg></svg>
+	</section>	
+		
+
 	
 	
 	
 	
 	
 </body>
+	<script src="d3.min.js"></script>
+	<script src="finaldata.js"></script>
+	<script src="finaldashboard.js"></script>
 </html>
-
+<html>
 
 
 

@@ -1,12 +1,26 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+	
+
+
+:root {
+	--back: #ffffd0;
+	--textC: #111118;
+	--imdb: #e4160d;
+	--meta: #177a7d;
+	--high: rgba(0,0,0, 0.05)
+}
+
+
 body {
 	color: black;
 	background-color: #F0F2F5;
 	width: auto;
 	padding: 0;
 	margin: 0 0 0 0;
+	font-family: 'Space Mono', monospace;
 }
 
 header {
@@ -52,6 +66,12 @@ button.ant-btn {
 	background-color: white;
 }
 
+h1 {
+	font-family: Title Font;
+	font-size: 30px;
+	text-align: center;
+}
+
 h2 {
 	font-family: Title Font;
 	font-size: 30px;
@@ -66,18 +86,122 @@ h3 {
 	line-height: 1;
 }
 
-section.total {
+	
+
+section {
+
+	padding: 24px;
+
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	
+
 	margin: 50px 50px 0 50px;
 
 	background-color: white;
 }
 
-h1 {
-	font-family: Title Font;
-	font-size: 30px;
-	text-align: center;
+form {
+	position: sticky;
+	top: 0;
+	border-bottom: 3px solid var(--textC);
+	width: 100%;
+	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	flex-direction: row;
+    font-size: 14px;
+}
+span {
+	margin: 0 10px 0 0;
 }
 
+span.i {
+	color: var(--imdb);
+}
+
+span.m {
+	color: var(--meta);
+}
+
+text {
+	dominant-baseline: middle;
+}
+
+text.title {
+	font-weight: 1000;
+}
+
+circle.publications {
+	fill: var(--imdb)
+}
+
+circle.citations {
+	fill: var(--meta)
+}
+
+circle.hIndex {
+	fill: green;
+}
+
+text.citations {
+	fill: var(--meta);
+	font-size: 12px;
+}
+
+text.publications {
+	fill: var(--imdb);
+	font-size: 12px;
+}
+
+text.hIndex {
+	fill: green;
+	font-size: 12px;
+}
+
+rect {
+	fill: var(--high);
+	opacity: 0;
+	transition: opacity 0.25s;
+}
+
+g.movie:hover rect {
+	opacity: 1;
+}
+
+
+path.publications {
+	stroke: var(--imdb);
+	stroke-width: 3px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
+
+path.citations {
+	stroke: var(--meta);
+	stroke-width: 3px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
+
+path.area {
+	fill: var(--high);
+	transition: opacity 0.25s;
+
+}
+
+path.hIndex {
+	stroke: green;
+	stroke-width: 3px;
+	fill: none;
+	transition: opacity 0.25s;
+	
+}
 
 	
 	

@@ -17,15 +17,15 @@ svg
 //scale for data to be demonstrated
 const pubScale=d3.scaleLinear()
 	.domain([0, 220])
-	.range([600, 980])
+	.range([500, 980])
 
 const citeScale=d3.scaleLinear()
 	.domain([0, 5000], [5000, 24500])
-	.range([600, 900], [900, 980])
+	.range([520, 900], [900, 980])
 
 const hScale=d3.scaleLinear()
-	.domain([0, 50])
-	.range([600, 900])
+	.domain([0, 60])
+	.range([540, 900])
 
 citeScale.clamp(true);
 
@@ -91,7 +91,7 @@ var hLine = d3.line()
 	.y((d,i)=>{return 40*i+20})
 	.curve(d3.curveCardinal.tension(.25))
 
-const hsPath= svg
+const hPath= svg
 	.append("path")
 	.datum(data)
 	.attr("d", hLine)
@@ -111,18 +111,37 @@ const groups= svg
 //title text
 groups	
 	.append("text")
-	.attr("x", 90)
+	.attr("x", 180)
 	.attr("y", 20)
 	.attr("class", "title")
 	.text((d,i) => {return d.title})
 
+
+// AppendLinkHere.appendChild(a)
+// a.title = 'Well well ... 
+// a.setAttribute('title', 'Well well that\'s a link');
+
 //hIndex text
 groups	
 	.append("text")
-	.attr("x", 24)
+	.attr("x", 12)
 	.attr("y", 20)
 	.attr("class", "hIndex")
 	.text((d,i) => {return d.hIndex})
+
+groups	
+	.append("text")
+	.attr("x", 64)
+	.attr("y", 20)
+	.attr("class", "publications")
+	.text((d,i) => {return d.publications})
+
+groups	
+	.append("text")
+	.attr("x", 120)
+	.attr("y", 20)
+	.attr("class", "citations")
+	.text((d,i) => {return d.citations})
 
 //make the hover highlight rect
 groups
@@ -146,11 +165,11 @@ groups
 	.append("text")
 	.attr("x", (d,i)=>{
 		if (d.difference > 0) {
-		return citeScale(d.citations)-15	
+		return citeScale(d.citations)	
 		} else {
-			return citeScale(d.citations)+15
+			return citeScale(d.citations)
 		}})
-	.attr("y", 22)
+	.attr("y", 35)
 	.attr("class", "citations")
 	.text((d,i) => {return d.citations})
 	.style("text-anchor", (d,i) => {
@@ -174,11 +193,11 @@ groups
 	.append("text")
 		.attr("x", (d,i)=>{
 		if (d.pubScale > d.citeScale) {
-		return pubScale(d.publications)+15	
+		return pubScale(d.publications)	
 		} else {
-			return pubScale(d.publications)-15
+			return pubScale(d.publications)
 		}})
-	.attr("y", 20)
+	.attr("y", 9)
 	.attr("class", "publications")
 	.text((d,i) => {return d.publications})
 	.style("text-anchor", (d,i) => {
@@ -262,7 +281,7 @@ const selectTag=document.querySelector("select")
 		.duration(1000)
 		.attr("d", citationsLine)
 		
-	hsPath
+	hPath
 		.datum(data, (d,i)=>{return d.title})
 		.transition()
 		.duration(1000)

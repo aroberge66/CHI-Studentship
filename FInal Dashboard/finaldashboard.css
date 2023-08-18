@@ -8,7 +8,7 @@
 :root {
 	--back: #ffffd0;
 	--textC: #111118;
-	--imdb: #e4160d;
+	--imdb: #e4160a;
 	--meta: #177a7d;
 	--high: rgba(0,0,0, 0.05)
 }
@@ -68,15 +68,20 @@ button.ant-btn {
 
 h1 {
 	font-family: Title Font;
-	font-size: 30px;
+	font-size: 50px;
 	text-align: center;
+	line-height: 1;
+	margin: 0 0 0 0;
 }
 
 h2 {
 	font-family: Title Font;
-	font-size: 30px;
+	color: gray;
+	font-size: 16px;
 	text-align: center;
 	line-height: 1;
+	margin: 0 0 30px 0;
+	opacity: 55%;
 }
 
 h3 {
@@ -106,6 +111,7 @@ section {
 
 form {
 	position: sticky;
+	background-color: white;
 	top: 0;
 	border-bottom: 3px solid var(--textC);
 	width: 100%;
@@ -116,7 +122,8 @@ form {
     font-size: 14px;
 }
 span {
-	margin: 0 10px 0 0;
+	margin: 0 1px 0 0;
+	font-size: 12px;
 }
 
 span.i {
@@ -125,6 +132,17 @@ span.i {
 
 span.m {
 	color: var(--meta);
+}
+
+span.h {
+	color: green;
+}
+
+span.r {
+	margin: 0 0 0 5px;
+	font-size: 25px;
+	font-weight: 1200;
+	color: black;
 }
 
 text {
@@ -153,7 +171,7 @@ text.citations {
 }
 
 text.publications {
-	fill: var(--imdb);
+	fill: #e4166b;
 	font-size: 12px;
 }
 
@@ -177,6 +195,7 @@ path.publications {
 	stroke: var(--imdb);
 	stroke-width: 3px;
 	fill: none;
+	opacity: 70%;
 	transition: opacity 0.25s;
 	
 }
@@ -185,6 +204,7 @@ path.citations {
 	stroke: var(--meta);
 	stroke-width: 3px;
 	fill: none;
+	opacity: 70%;
 	transition: opacity 0.25s;
 	
 }
@@ -199,6 +219,7 @@ path.hIndex {
 	stroke: green;
 	stroke-width: 3px;
 	fill: none;
+	opacity: 70%;
 	transition: opacity 0.25s;
 	
 }

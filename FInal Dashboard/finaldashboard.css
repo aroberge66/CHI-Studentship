@@ -159,8 +159,9 @@ circle.publications {
 }
 
 circle.citations {
-	fill: var(--meta);
+	fill: #177a7d;
 	opacity: 90%;
+	
 }
 
 circle.hIndex {
@@ -169,21 +170,30 @@ circle.hIndex {
 }
 
 text.citations {
-	fill: var(--meta);
+	fill: #177abf;
 	font-size: 12px;
 	opacity: 190%;
+	font-weight: 1000;
+	text-anchor:  middle;
+	dominant-baseline: middle;
 }
 
 text.publications {
 	fill: #e4162c;
 	font-size: 12px;
 	opacity: 190%;
+	font-weight: 1000;
+	text-anchor:  middle;
+	dominant-baseline: middle;
 }
 
 text.hIndex {
-	fill: green;
+	fill: #00BF22;
 	font-size: 12px;
-	opacity: 190%;
+	opacity: 200%;
+	font-weight: 1000;
+	text-anchor:  middle;
+	dominant-baseline: middle;
 }
 
 rect {

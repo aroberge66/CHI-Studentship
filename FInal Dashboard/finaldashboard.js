@@ -169,7 +169,7 @@ groups
 		} else {
 			return citeScale(d.citations)
 		}})
-	.attr("y", 45)
+	.attr("y", 47)
 	.attr("class", "citations")
   	.attr("text-anchor", "middle")
   	.attr("dominant-baseline", "central")
@@ -197,11 +197,11 @@ groups
 	.append("text")
 		.attr("x", (d,i)=>{
 		if (d.pubScale > d.citeScale) {
-		return pubScale(d.publications)
+		return pubScale(d.publications)+10
 		} else {
-			return pubScale(d.publications)
+			return pubScale(d.publications)+10
 		}})
-	.attr("y", 19)
+	.attr("y", 18)
 	.attr("class", "publications")
   	.attr("text-anchor", "middle")
   	.attr("dominant-baseline", "central")
@@ -232,7 +232,7 @@ groups
 		} else {
 			return hScale(d.hIndex)-15
 		}})
-	.attr("y", 35)
+	.attr("y", 32)
 	.attr("class", "hIndex")
   	.attr("text-anchor", "middle")
 	.attr("dominant-baseline", "central")

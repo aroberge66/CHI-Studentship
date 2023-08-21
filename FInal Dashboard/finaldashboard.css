@@ -154,30 +154,36 @@ text.title {
 }
 
 circle.publications {
-	fill: var(--imdb)
+	fill: var(--imdb);
+	opacity: 90%;
 }
 
 circle.citations {
-	fill: var(--meta)
+	fill: var(--meta);
+	opacity: 90%;
 }
 
 circle.hIndex {
 	fill: green;
+	opacity: 90%;
 }
 
 text.citations {
 	fill: var(--meta);
 	font-size: 12px;
+	opacity: 190%;
 }
 
 text.publications {
-	fill: #e4166b;
+	fill: #e4162c;
 	font-size: 12px;
+	opacity: 190%;
 }
 
 text.hIndex {
 	fill: green;
 	font-size: 12px;
+	opacity: 190%;
 }
 
 rect {

@@ -10,7 +10,7 @@ data = data.map((d,i)=>{
 
 //svg size
 svg
-.attr("viewBox", "0 0 960 8200")
+.attr("viewBox", "0 0 960 800")
 
 
 
@@ -25,7 +25,7 @@ const citeScale=d3.scaleLinear()
 
 const hScale=d3.scaleLinear()
 	.domain([0, 60])
-	.range([540, 900])
+	.range([540, 950])
 
 citeScale.clamp(true);
 
@@ -38,8 +38,8 @@ hScale.clamp(true);
 const area= d3.area()
 	.x0((d,i)=>{return pubScale(d.publications)})
 	.x1((d,i)=>{return citeScale(d.citations)})
-	.y0((d,i)=>{return 40*i+20})
-	.y1((d,i)=>{return 40*i+20})
+	.y0((d,i)=>{return 40*i+30})
+	.y1((d,i)=>{return 40*i+30})
 	.curve(d3.curveCardinal.tension(.25))
 
 const areaPath=svg
@@ -52,8 +52,8 @@ const areaPath=svg
 const area1= d3.area()
 	.x0((d,i)=>{return hScale(d.hIndex)})
 	.x1((d,i)=>{return citeScale(d.citations)})
-	.y0((d,i)=>{return 40*i+20})
-	.y1((d,i)=>{return 40*i+20})
+	.y0((d,i)=>{return 40*i+30})
+	.y1((d,i)=>{return 40*i+30})
 	.curve(d3.curveCardinal.tension(.25))
 
 const AreaPath1=svg
@@ -66,7 +66,7 @@ const AreaPath1=svg
 //the actual paths
 var publicationsLine = d3.line()
   	.x((d,i)=>{return pubScale(d.publications)})
-	.y((d,i)=>{return 40*i+20})
+	.y((d,i)=>{return 40*i+30})
 	.curve(d3.curveCardinal.tension(.25))
 
 const publicationsPath= svg
@@ -77,7 +77,7 @@ const publicationsPath= svg
 
 var citationsLine = d3.line()
   	.x((d,i)=>{return citeScale(d.citations)})
-	.y((d,i)=>{return 40*i+20})
+	.y((d,i)=>{return 40*i+30})
 	.curve(d3.curveCardinal.tension(.25))
 
 const citationsPath= svg
@@ -88,7 +88,7 @@ const citationsPath= svg
 
 var hLine = d3.line()
   	.x((d,i)=>{return hScale(d.hIndex)})
-	.y((d,i)=>{return 40*i+20})
+	.y((d,i)=>{return 40*i+30})
 	.curve(d3.curveCardinal.tension(.25))
 
 const hPath= svg
@@ -112,7 +112,7 @@ const groups= svg
 groups	
 	.append("text")
 	.attr("x", 180)
-	.attr("y", 20)
+	.attr("y", 30)
 	.attr("class", "title")
 	.text((d,i) => {return d.title})
 
@@ -125,21 +125,21 @@ groups
 groups	
 	.append("text")
 	.attr("x", 12)
-	.attr("y", 20)
+	.attr("y", 30)
 	.attr("class", "hIndex")
 	.text((d,i) => {return d.hIndex})
 
 groups	
 	.append("text")
 	.attr("x", 64)
-	.attr("y", 20)
+	.attr("y", 30)
 	.attr("class", "publications")
 	.text((d,i) => {return d.publications})
 
 groups	
 	.append("text")
 	.attr("x", 120)
-	.attr("y", 20)
+	.attr("y", 30)
 	.attr("class", "citations")
 	.text((d,i) => {return d.citations})
 
@@ -157,7 +157,7 @@ groups
 groups	
 	.append("circle")
 	.attr("cx", (d,i)=>{return citeScale(d.citations)})
-	.attr("cy", 20)
+	.attr("cy", 30)
 	.attr("r", 8)
 	.attr("class", "citations")
 
@@ -169,8 +169,12 @@ groups
 		} else {
 			return citeScale(d.citations)
 		}})
-	.attr("y", 35)
+	.attr("y", 45)
 	.attr("class", "citations")
+  	.attr("text-anchor", "middle")
+  	.attr("dominant-baseline", "central")
+	.style("font-size", "15px")
+	.style("font-weight", "1200")
 	.text((d,i) => {return d.citations})
 	.style("text-anchor", (d,i) => {
 		if(d.difference > 0) {
@@ -185,7 +189,7 @@ groups
 groups	
 	.append("circle")
 	.attr("cx", (d,i)=>{return pubScale(d.publications)})
-	.attr("cy", 20)
+	.attr("cy", 30)
 	.attr("r", 8)
 	.attr("class", "publications")
 
@@ -193,12 +197,16 @@ groups
 	.append("text")
 		.attr("x", (d,i)=>{
 		if (d.pubScale > d.citeScale) {
-		return pubScale(d.publications)	
+		return pubScale(d.publications)
 		} else {
 			return pubScale(d.publications)
 		}})
-	.attr("y", 9)
+	.attr("y", 19)
 	.attr("class", "publications")
+  	.attr("text-anchor", "middle")
+  	.attr("dominant-baseline", "central")
+	.style("font-size", "15px")
+	.style("font-weight", "1200")
 	.text((d,i) => {return d.publications})
 	.style("text-anchor", (d,i) => {
 		if(d.difference > 0) {
@@ -212,7 +220,7 @@ groups
 groups	
 	.append("circle")
 	.attr("cx", (d,i)=>{return hScale(d.hIndex)})
-	.attr("cy", 20)
+	.attr("cy", 30)
 	.attr("r", 8)
 	.attr("class", "hIndex")
 
@@ -224,8 +232,11 @@ groups
 		} else {
 			return hScale(d.hIndex)-15
 		}})
-	.attr("y", 20)
+	.attr("y", 35)
 	.attr("class", "hIndex")
+  	.attr("text-anchor", "middle")
+	.attr("dominant-baseline", "central")
+	.style("font-size", "15px")
 	.text((d,i) => {return d.hIndex})
 	.style("text-anchor", (d,i) => {
 		if(d.difference > 0) {

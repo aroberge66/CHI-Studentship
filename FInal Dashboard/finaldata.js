@@ -16,9 +16,9 @@ let data = [
   },
   {
     "title": "Catherine Eastwood",
-    "hIndex": 13,
-    "publications": 8,
-    "citations": 58,
+    "hIndex": 17,
+    "publications": 41,
+    "citations": 542,
     "href": "/title/tt4154796/"
   },
   {

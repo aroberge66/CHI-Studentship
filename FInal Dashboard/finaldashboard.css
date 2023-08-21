@@ -156,17 +156,20 @@ text.title {
 circle.publications {
 	fill: var(--imdb);
 	opacity: 90%;
+	stroke: grey;
 }
 
 circle.citations {
 	fill: #177a7d;
 	opacity: 90%;
+	stroke: grey;
 	
 }
 
 circle.hIndex {
 	fill: green;
 	opacity: 90%;
+	stroke: grey;
 }
 
 text.citations {

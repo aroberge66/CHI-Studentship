@@ -127,5 +127,19 @@ let data = [
     "publications": 15,
     "citations": 319,
     "href": "https://scholar.google.ca/citations?view_op=list_works&hl=en&user=7g04BIgAAAAJ"
+  },
+	{
+    "title": "Bing Li",
+    "hIndex": 12,
+    "publications": 30,
+    "citations": 4314,
+    "href": "https://scholar.google.ca/citations?hl=en&user=pfcC714AAAAJ"
+  },
+	{
+    "title": "Yuan Xu",
+    "hIndex": 15,
+    "publications": 92,
+    "citations": 601,
+    "href": "https://scholar.google.ca/citations?hl=en&user=900_hMsAAAAJ&view_op=list_works&sortby=pubdate"
   }
 ]

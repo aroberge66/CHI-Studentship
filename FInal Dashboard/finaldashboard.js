@@ -10,7 +10,7 @@ data = data.map((d,i)=>{
 
 //svg size
 svg
-.attr("viewBox", "0 0 960 900")
+.attr("viewBox", "0 0 960 1000")
 
 
 

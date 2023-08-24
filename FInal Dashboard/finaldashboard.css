@@ -138,15 +138,15 @@ span {
 }
 
 span.i {
-	color: var(--imdb);
+	color:#f57b00;
 }
 
 span.m {
-	color: var(--meta);
+	color: #2d4b7a;
 }
 
 span.h {
-	color: green;
+	color: #b6bd36;
 }
 
 span.r {
@@ -175,26 +175,23 @@ text.title:selected {
 }
 
 circle.publications {
-	fill: var(--imdb);
-	opacity: 95%;
+	fill: #ffb061;
 	stroke: grey;
 }
 
 circle.citations {
-	fill: #177abf;
-	opacity: 95%;
+	fill: #617eac;
 	stroke: grey;
 	
 }
 
 circle.hIndex {
-	fill: #00BF22;
-	opacity: 95%;
+	fill: #e5ee44;
 	stroke: grey;
 }
 
 text.citations {
-	fill:#177a7f;
+	fill:#2d4b7a;
 	font-size: 12px;
 	opacity: 190%;
 	font-weight: 1000;
@@ -203,7 +200,7 @@ text.citations {
 }
 
 text.publications {
-	fill: #e4162c;
+	fill: #f57b00;
 	font-size: 12px;
 	opacity: 200%;
 	font-weight: 1000;
@@ -212,7 +209,7 @@ text.publications {
 }
 
 text.hIndex {
-	fill:	#008000;
+	fill:	#b6bd36;
 	font-size: 12px;
 	opacity: 200%;
 	font-weight: 1000;
@@ -232,7 +229,7 @@ g.movie:hover rect {
 
 
 path.publications {
-	stroke: var(--imdb);
+	stroke: #ffb061;
 	stroke-width: 3px;
 	fill: none;
 	opacity: 70%;
@@ -241,7 +238,7 @@ path.publications {
 }
 
 path.citations {
-	stroke: #177abf;
+	stroke:#617eac;
 	stroke-width: 3px;
 	fill: none;
 	opacity: 70%;
@@ -256,7 +253,7 @@ path.area {
 }
 
 path.hIndex {
-	stroke: #00BF22;
+	stroke: #e5ee44;
 	stroke-width: 3px;
 	fill: none;
 	opacity: 70%;

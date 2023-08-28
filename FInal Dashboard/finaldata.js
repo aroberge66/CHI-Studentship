@@ -2,30 +2,30 @@
 let data = [
   {
     "title": "Hude Quan",
-    "hIndex": 57,
+    "hIndex": 58,
     "publications": 610,
-    "citations": 24370,
+    "citations": 24479,
     "href": "https://scholar.google.com/citations?hl=en&tzom=360&user=AxHwBzoAAAAJ"
   },
   {
     "title": "Danielle Southern",
     "hIndex": 25,
-    "publications": 264,
-    "citations": 2546,
+    "publications": 263,
+    "citations": 2556,
     "href": "https://scholar.google.ca/citations?hl=en&user=u5KamkgAAAAJ"
   },
   {
     "title": "Catherine Eastwood",
     "hIndex": 11,
     "publications": 42,
-    "citations": 403,
+    "citations": 404,
     "href": "https://scholar.google.com/citations?user=CP6eKkgAAAAJ&hl=en&oi=ao"
   },
   {
     "title": "Tyler Williamson",
     "hIndex": 33,
-    "publications": 282,
-    "citations": 4112,
+    "publications": 283,
+    "citations": 4131,
     "href": "https://scholar.google.com/citations?user=WCP1A68AAAAJ&hl=en&oi=ao%C2%A0"
   },
 	
@@ -33,7 +33,7 @@ let data = [
     "title": "Na Li",
     "hIndex": 16,
     "publications": 59,
-    "citations": 1132,
+    "citations": 1133,
     "href": "https://scholar.google.com/citations?user=TpL9vgUAAAAJ&hl=en"
   },
 	
@@ -41,7 +41,7 @@ let data = [
     "title": "Colin Josephson",
     "hIndex": 22,
     "publications": 97,
-    "citations": 2082,
+    "citations": 2100,
     "href": "https://scholar.google.ca/citations?hl=en&user=8M_5zcYAAAAJ"
   },
 	
@@ -49,7 +49,7 @@ let data = [
     "title": "Joon Lee",
     "hIndex": 26,
     "publications": 122,
-    "citations": 2804,
+    "citations": 2813,
     "href": "https://scholar.google.ca/citations?user=FHprpkAAAAAJ&hl=en"
   },
 	
@@ -73,14 +73,14 @@ let data = [
     "title": "Adam D'Souza",
     "hIndex": 6,
     "publications": 19,
-    "citations": 106,
+    "citations": 108,
     "href": "https://scholar.google.ca/citations?hl=en&user=-Gey6lwAAAAJ"
   },
 	{
     "title": "Elliot Martin",
     "hIndex": 6,
     "publications": 16,
-    "citations": 100,
+    "citations": 101,
     "href": "https://scholar.google.ca/citations?hl=en&user=G6JC7FsAAAAJ"
   },
 	
@@ -88,7 +88,7 @@ let data = [
     "title": "Seungwon Lee",
     "hIndex": 5,
     "publications": 10,
-    "citations": 82,
+    "citations": 84,
     "href": "https://scholar.google.ca/citations?user=kPM2loIAAAAJ&hl=en"
   },
  
@@ -96,7 +96,7 @@ let data = [
     "title": "Guosong Wu",
     "hIndex": 4,
     "publications": 20,
-    "citations": 94,
+    "citations": 95,
     "href": "https://scholar.google.com/citations?user=4BjIRAUAAAAJ&hl=en"
   },
 	
@@ -104,7 +104,7 @@ let data = [
     "title": "James King",
     "hIndex": 11,
     "publications": 41,
-    "citations": 993,
+    "citations": 1016,
     "href": "https://scholar.google.com/citations?user=SvaxsekAAAAJ&hl=en&oi=ao%C2%A0"
   },
 	{
@@ -132,14 +132,14 @@ let data = [
     "title": "Bing Li",
     "hIndex": 12,
     "publications": 30,
-    "citations": 4314,
+    "citations": 4323,
     "href": "https://scholar.google.ca/citations?hl=en&user=pfcC714AAAAJ"
   },
 	{
     "title": "Yuan Xu",
     "hIndex": 15,
     "publications": 92,
-    "citations": 601,
+    "citations": 604,
     "href": "https://scholar.google.ca/citations?hl=en&user=900_hMsAAAAJ&view_op=list_works&sortby=pubdate"
   }
 ]

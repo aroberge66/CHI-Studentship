@@ -20,7 +20,7 @@ const pubScale=d3.scaleLinear()
 	.range([490, 980])
 
 const citeScale=d3.scaleLinear()
-	.domain([0, 5000], [5000, 24500])
+	.domain([0, 5000], [5000, 25000])
 	.range([510, 900], [900, 980])
 
 const hScale=d3.scaleLinear()

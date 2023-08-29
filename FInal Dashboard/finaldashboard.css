@@ -24,6 +24,8 @@ body {
 }
 
 header {
+	position: sticky;
+	top: 0;
 	background-color: white;
 	width: 100%;
 	display: flex;
@@ -123,7 +125,7 @@ section {
 form {
 	position: sticky;
 	background-color: white;
-	top: 0;
+	top: 60px;
 	border-bottom: 3px solid var(--textC);
 	width: 100%;
 	display: flex;

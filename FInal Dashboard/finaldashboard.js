@@ -10,7 +10,7 @@ data = data.map((d,i)=>{
 
 //svg size
 svg
-.attr("viewBox", "0 0 960 1000")
+.attr("viewBox", "0 0 960 1020")
 
 
 
@@ -252,7 +252,11 @@ const selectTag=document.querySelector("select")
 
 	selectTag.addEventListener("change", function () {
 		data.sort((a,b)=>{
-			if (this.value == "publicationsD") {
+			if (this.value == "nameA"){
+				return d3. ascending(a.title, b.title)
+			} else if (this.value == "nameD"){
+				return d3. descending(a.title, b.title)
+			} else if (this.value == "publicationsD") {
 				return d3.descending(a.publications, b.publications)
 			} else if (this.value == "publicationsA"){
 				return d3. ascending(a.publications, b.publications)
@@ -260,10 +264,6 @@ const selectTag=document.querySelector("select")
 				return d3. ascending(a.hIndex, b.hIndex)
 			} else if (this.value == "hIndexD"){
 				return d3. descending(a.hIndex, b.hIndex)
-			} else if (this.value == "nameA"){
-				return d3. ascending(a.title, b.title)
-			} else if (this.value == "nameD"){
-				return d3. descending(a.title, b.title)
 			} else if (this.value == "citationsA"){
 				return d3. ascending(a.citations, b.citations)
 			} else if (this.value =="difference") {

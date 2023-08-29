@@ -15,7 +15,7 @@ let data = [
     "href": "https://scholar.google.ca/citations?hl=en&user=u5KamkgAAAAJ"
   },
   {
-    "title": "Catherine Eastwood",
+    "title": "Cathy Eastwood",
     "hIndex": 11,
     "publications": 42,
     "citations": 404,
@@ -141,5 +141,12 @@ let data = [
     "publications": 92,
     "citations": 604,
     "href": "https://scholar.google.ca/citations?hl=en&user=900_hMsAAAAJ&view_op=list_works&sortby=pubdate"
+  },
+	{
+    "title": "Jessalyn Holodinsky",
+    "hIndex": 16,
+    "publications": 86,
+    "citations": 1398,
+    "href": "https://scholar.google.ca/citations?user=2bgLYxkAAAAJ&hl=en&oi=ao"
   }
 ]

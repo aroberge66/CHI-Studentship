@@ -91,8 +91,7 @@ h3 {
 	font-size: 20px;
 	text-align: center;
 	line-height: 1;
-	margin: 20px 0 0 0;
-	
+	margin: 20px 0 0 0;	
 }
 
 h4 {
@@ -100,25 +99,18 @@ h4 {
 	font-size: 20px;
 	text-align: center;
 	line-height: 1;
-	margin: 5px 0 20px 0;
-	
+	margin: 5px 0 20px 0;	
 }
 
 	
 
 section {
-
 	padding: 10px;
-
-	
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
-	height: 250vh;
-
 	margin: 50px 40px 50px 40px;
-
 	background-color: white;
 }
 
@@ -164,8 +156,7 @@ text {
 
 text.title {
 	font-weight: 1000;
-	font-size: 22px;
-	
+	font-size: 22px;	
 }
 
 text.title:hover {
@@ -183,8 +174,7 @@ circle.publications {
 
 circle.citations {
 	fill: #617eac;
-	stroke: grey;
-	
+	stroke: grey;	
 }
 
 circle.hIndex {
@@ -235,8 +225,7 @@ path.publications {
 	stroke-width: 3px;
 	fill: none;
 	opacity: 70%;
-	transition: opacity 0.25s;
-	
+	transition: opacity 0.25s;	
 }
 
 path.citations {
@@ -244,14 +233,12 @@ path.citations {
 	stroke-width: 3px;
 	fill: none;
 	opacity: 70%;
-	transition: opacity 0.25s;
-	
+	transition: opacity 0.25s;	
 }
 
 path.area {
 	fill: var(--high);
 	transition: opacity 0.25s;
-
 }
 
 path.hIndex {
@@ -260,7 +247,6 @@ path.hIndex {
 	fill: none;
 	opacity: 70%;
 	transition: opacity 0.25s;
-	
 }
 
 	

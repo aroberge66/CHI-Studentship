@@ -14,6 +14,7 @@ svg
 
 
 
+
 //scale for data to be demonstrated
 const pubScale=d3.scaleLinear()
 	.domain([0, 650])

@@ -113,12 +113,19 @@ groups
 	.attr("height", 48)
 //title text
 groups	
-	.append("svg:a").attr("xlink:href", function(d, i){ return d.href })
+	.append("svg:a")
 	.append("svg:text")
 	.attr("x", 147)
 	.attr("y", 30)
 	.attr("class", "title")
 	.text((d,i) => {return d.title})
+	.on('click', function(d) {
+    console.log('open tab')
+    window.open(
+      d.href,
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  });
 
 
 // AppendLinkHere.appendChild(a)

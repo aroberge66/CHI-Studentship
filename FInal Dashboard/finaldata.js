@@ -97,6 +97,12 @@ let data = [
     "publications": 122,
     "citations": 2813,
     "href": "https://scholar.google.ca/citations?user=FHprpkAAAAAJ&hl=en"
+  },	 {
+    "title": "Mairead Whelan",
+    "hIndex": 4,
+    "publications": 12,
+    "citations": 518,
+    "href": "https://scholar.google.ca/citations?user=FHprpkAAAAAJ&hl=en"
   },
 	 {
     "title": "Na Li",
@@ -111,6 +117,12 @@ let data = [
     "publications": 15,
     "citations": 319,
     "href": "https://scholar.google.ca/citations?view_op=list_works&hl=en&user=7g04BIgAAAAJ"
+  },	{
+    "title": "Rahul Arora",
+    "hIndex": 8,
+    "publications": 38,
+    "citations": 856,
+    "href": "https://scholar.google.ca/citations?user=OYTQDKAAAAAJ&hl=en&oi=ao"
   },
 	{
     "title": "Seungwon Lee",
